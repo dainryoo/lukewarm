@@ -48,16 +48,15 @@
     padding: 0 5vw;
     color: #d8d8d8;
     font-family: 'Rouge Script', cursive;
-    font-size: 50px;
-    margin-top: 15vh;
+    font-size: 52px;
+    margin-top: 20vh;
     text-align: center;
     transition-duration: 0.1s;
-    height: 30vh;
+    height: 45vh;
 }
 @media screen and (max-width: 768px) {
     #heartfeltMessage {
-        font-size: 47px;
-        height: 45vh;
+        margin-top: 15vh;
     }
 }
 @media screen and (max-width: 425px) {
