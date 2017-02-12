@@ -8,10 +8,11 @@ var sorryFront = ["Apologies", "Forgive me", "I apologize", "Sorry"];
 var thanksFront = ["Hello", "Many thanks", "Much thanks", "Thanks", "Thanks a bunch", "Thanks a lot", "Thanks so much", "Thank you"];
 
 function pageSetup() {
-    document.getElementById("heartfeltMessage").style.visibility  = "hidden";
+    //nothing for now
 }
 
 function birthdayMsg() {
+    document.getElementById("heartfeltMessage").style.color = "black";
     document.getElementById("heartfeltMessage").style.visibility  = "visible";
     var mainMsg = "";
     var randNum = Math.floor((Math.random() * 6) + 1); //6 choices
@@ -32,6 +33,7 @@ function birthdayMsg() {
 }
 
 function valentinesMsg() {
+    document.getElementById("heartfeltMessage").style.color = "black";
     document.getElementById("heartfeltMessage").style.visibility  = "visible";
     var frontMsg = randWord(valentineFront);
     var mainMsg = "";
@@ -52,6 +54,7 @@ function valentinesMsg() {
 }
 
 function sorryMsg() {
+    document.getElementById("heartfeltMessage").style.color = "black";
     document.getElementById("heartfeltMessage").style.visibility  = "visible";
     var frontMsg = randWord(sorryFront);
     var mainMsg = "";
@@ -74,6 +77,7 @@ function sorryMsg() {
 }
 
 function thanksMsg() {
+    document.getElementById("heartfeltMessage").style.color = "black";
     document.getElementById("heartfeltMessage").style.visibility  = "visible";
     var frontMsg = randWord(thanksFront);
     var mainMsg = "";
