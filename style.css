@@ -62,8 +62,9 @@
 }
 @media screen and (max-width: 425px) {
     #heartfeltMessage {
-        font-size: 25px;
+        font-size: 35px;
         margin-top: 10vh;
+        height: 50vh;
     }
 }
 
