@@ -73,7 +73,7 @@
     margin-top: 20vh;
     text-align: center;
     transition-duration: 0.1s;
-    height: 45vh;
+    height: 44vh;
 }
 @media screen and (max-width: 768px) {
     #heartfeltMessage {
