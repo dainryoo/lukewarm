@@ -15,10 +15,6 @@
 .title:hover {
     color: black;
 }
-.container-fluid {
-    padding-bottom: 2vh;
-    border-bottom:1px solid #d8d8d8;
-}
 .cardType {
     font-family: 'Quicksand', serif;
     text-align: center;
@@ -44,9 +40,34 @@
     border-radius: 2px;
 }
 
+.colorSelector {
+    height: 17px;
+    margin-top: 1vw;
+    text-align: center;
+}
+.color {
+    width: 17px;
+    height: 17px;
+    border: none;
+    border-radius: 50%;
+    transition-duration: 0.1s;
+}
+#blue {
+    background-color: #dde9ff;
+}
+#yellow {
+    background-color: #fff3c6;
+}
+#red {
+    background-color: #ffd6d6;
+}
+#gray {
+    background-color: #d8d8d8;
+}
+
 #heartfeltMessage {
     padding: 0 5vw;
-    color: #d8d8d8;
+    color: #b2b2b2;
     font-family: 'Rouge Script', cursive;
     font-size: 52px;
     margin-top: 20vh;
@@ -76,7 +97,7 @@
     font-size: 11px;
     bottom: 0;
     width: 100%;
-    border-top: 1px solid #d8d8d8;
+    border-top: 1px solid #b2b2b2;
 }
 @media screen and (max-width: 425px) {
     .butWhy {

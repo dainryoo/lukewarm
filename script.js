@@ -100,3 +100,28 @@ function thanksMsg() {
 function randWord(wordArray) {
     return wordArray[Math.floor(Math.random() * wordArray.length)];
 }
+
+function colorYellow() {
+    cleanUp("yellow");
+    document.body.style.background = "#fff3c6";
+}
+function colorRed() {
+    cleanUp("red");
+    document.body.style.background = "#ffd6d6";
+}
+function colorBlue() {
+    cleanUp("blue");
+    document.body.style.background = "#dde9ff";
+}
+function colorGray() {
+    cleanUp("gray");
+    document.body.style.background = "white";
+}
+
+function cleanUp(theColor) {
+    var colorButtons = document.getElementsByClassName("color");
+    for(var i = 0; i < colorButtons.length; i++) {
+       colorButtons.item(i).style.border = 0;
+    }
+    document.getElementById(theColor).style.border = "2px solid white";
+}
