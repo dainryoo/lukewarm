@@ -1,0 +1,52 @@
+.title {
+    font-family: 'Open Sans Condensed', serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    color: grey;
+    transition-duration: 0.5s;
+}
+.title:hover {
+    
+    color: black;
+}
+.cardType {
+    font-family: 'Quicksand', serif;
+    text-align: center;
+    font-size: 15px
+}
+.cardType button {
+    background-color: transparent;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 1vh;
+    transition-duration: 0.3s;
+}
+.cardType button:hover {
+    color: black;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+#heartfeltMessage {
+    font-family: 'Rouge Script', cursive;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 12vw;
+}
+
+.butWhy {
+    color: grey;
+    font-family: 'Quicksand', serif;
+    text-align: center;
+    position:fixed;
+    font-size: 11px;
+    bottom: 1vh;
+    width: 100%;
+}
+.butWhy h4 {
+    font-family: 'Open Sans Condensed', serif;
+}

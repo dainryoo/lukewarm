@@ -1,10 +1,10 @@
 var acceptableSynonyms = ["acceptable", "adequate", "alright", "decent", "good", "ok", "passable", "satisfactory", "sufficient", "tolerable"];
-var awareSynonyms = ["aware", "told", "under the belief", "under the impression"];
+var awareSynonyms = ["aware", "realizing", "receiving news that", "told", "under the belief", "under the impression"];
 var palSynonyms = ["buddy", "dude", "gal", "guy", "human", "human being", "individual", "pal", "person"];
 var uncomfortableSynonyms = ["bad", "ill", "nervous", "not good", "not great", "ruffled", "sweaty", "tired", "uncomfortable"];
 
-var valentineFront = ["Dear Valentine", "Happy Valentine's Day", "Hello", "Hey", "Hey there", "Hey Valentine", "Hey you"];
-var sorryFront = ["Apologies", "Forgive me", "Hello", "I apologize", "Sorry"];
+var valentineFront = ["Dear Valentine", "Happy Valentine's Day", "Hello", "Hey", "Hey there", "Hey Valentine"];
+var sorryFront = ["Apologies", "Forgive me", "I apologize", "Sorry"];
 var thanksFront = ["Hello", "Many thanks", "Much thanks", "Thanks", "Thanks a bunch", "Thanks a lot", "Thanks so much", "Thank you"];
 
 function pageSetup() {
@@ -60,15 +60,15 @@ function sorryMsg() {
         mainMsg = frontMsg + ",  I feel " + randWord(uncomfortableSynonyms)
         + " because of what I did.";
     } else if (randNum == 2) {
-        mainMsg = frontMsg + ", I did a not very " + randWord(acceptableSynonyms)
+        mainMsg = frontMsg + ", I did a not-very-" + randWord(acceptableSynonyms)
         + " thing.";
     } else if (randNum == 3) {
-        mainMsg = frontMsg + " for making you feel " + randWord(uncomfortableSynonyms);
+        mainMsg = frontMsg + " for making you feel " + randWord(uncomfortableSynonyms) + ".";
     } else if (randNum == 4) {
-        mainMsg = frontMsg + ", I am a bad " + randWord(palSynonyms);
+        mainMsg = frontMsg + ", I am a bad " + randWord(palSynonyms) + ".";
     } else {
         mainMsg = frontMsg + ", I'm " + randWord(awareSynonyms)
-        + " that I did a bad thing"; 
+        + " that I did a bad thing."; 
     }
     document.getElementById("heartfeltMessage").innerHTML = mainMsg;
 }
@@ -79,16 +79,16 @@ function thanksMsg() {
     var mainMsg = "";
     var randNum = Math.floor((Math.random() * 5) + 1); //5 choices
     if (randNum == 1) {
-        mainMsg = frontMsg + ", you're " + randWord(acceptableSynonyms);
+        mainMsg = frontMsg + ", you're " + randWord(acceptableSynonyms) + ".";
     } else if (randNum == 2) {
         mainMsg = frontMsg + ", I'm " + randWord(awareSynonyms) 
         + " that you did that " + randWord(acceptableSynonyms) + " thing for me.";
     } else if (randNum == 3) {
-        mainMsg = frontMsg + ", what you did was " + randWord(acceptableSynonyms);
+        mainMsg = frontMsg + ", what you did was " + randWord(acceptableSynonyms) + ".";
     } else if (randNum == 4) {
-        mainMsg = frontMsg + ", you're the best " + randWord(palSynonyms);
+        mainMsg = frontMsg + ", you're the best " + randWord(palSynonyms) + ".";
     } else {
-        mainMsg = frontMsg + ", you're the most " + randWord(acceptableSynonyms) + randWord(palSynonyms) + ".";
+        mainMsg = frontMsg + ", you're the most " + randWord(acceptableSynonyms) + " " + randWord(palSynonyms) + ".";
     }
     document.getElementById("heartfeltMessage").innerHTML = mainMsg;
 }
