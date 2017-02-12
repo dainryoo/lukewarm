@@ -78,13 +78,13 @@
 @media screen and (max-width: 768px) {
     #heartfeltMessage {
         margin-top: 15vh;
+        height: 60vh;
     }
 }
 @media screen and (max-width: 425px) {
     #heartfeltMessage {
         font-size: 44px;
         margin-top: 10vh;
-        height: 60vh;
     }
 }
 
