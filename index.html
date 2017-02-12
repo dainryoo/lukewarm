@@ -8,27 +8,41 @@
     <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Rouge+Script|Quicksand" rel="stylesheet">
     <title>Half-Baked Greeting Cards</title>
 </head>
 
 <body onload="pageSetup()">
-    <h1>Amazing Greeting Cards</h1>
-    <div onclick="birthdayMsg()">
-        Birthday
-    </div>
-    <div onclick="valentinesMsg()">
-        Valentines
-    </div>
-    <div onclick="sorryMsg()">
-        Apology
-    </div>
-    <div onclick="thanksMsg()">
-        Thanks
+    
+    <div class="container-fluid">
+        <div class="title">vague greeting cards</div>
+        <div class="cardType col-xs-6 col-sm-3">
+            <button onclick="birthdayMsg()">BIRTHDAY</button>
+        </div>
+        <div class="cardType col-xs-6 col-sm-3">
+            <button onclick="valentinesMsg()">VALENTINES</button>
+        </div>
+        <div class="cardType col-xs-6 col-sm-3">
+            <button onclick="sorryMsg()">APOLOGY</button>
+        </div>
+        <div class="cardType col-xs-6 col-sm-3">
+            <button onclick="thanksMsg()">THANK YOU</button>
+        </div>
     </div>
     
     <div id="heartfeltMessage">FILLER TEXT!!</div>
     
-    <h2>But why</h2>
+    <div class="butWhy">
+        <h4>But why?</h4>
+        <p>1) These are literary masterpieces, painstakingly crafted by yours truly, 
+        a computer science major.</p>
+        <p>2) They're perfect for if you're a bit too busy to write a handwritten note, 
+        or to send to people that aren't quite strangers but also not close enough 
+        for you to be comfortably emotional, or when your overwhelming love for your recipient has spilled into the 
+        realm of ironically affectionate aloofness.</p>
+    </div>
+    
 
 </body>
 
