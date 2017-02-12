@@ -1,19 +1,33 @@
 .title {
     font-family: 'Open Sans Condensed', serif;
-    font-size: 40px;
+    font-size: 36px;
     text-align: center;
     margin-top: 5vh;
     margin-bottom: 2vh;
     color: grey;
     transition-duration: 0.5s;
 }
+@media screen and (max-width: 425px) {
+    .title {
+        font-size: 20px;
+    }
+}
 .title:hover {
     color: black;
+}
+.container-fluid {
+    padding-bottom: 2vh;
+    border-bottom:1px solid #d8d8d8;
 }
 .cardType {
     font-family: 'Quicksand', serif;
     text-align: center;
     font-size: 15px
+}
+@media screen and (max-width: 425px) {
+    .cardType {
+        font-size: 10px;
+    }
 }
 .cardType button {
     background-color: transparent;
@@ -31,22 +45,49 @@
 }
 
 #heartfeltMessage {
+    padding: 0 5vw;
     color: #d8d8d8;
     font-family: 'Rouge Script', cursive;
     font-size: 50px;
+    margin-top: 15vh;
     text-align: center;
-    margin-top: 12vw;
+    transition-duration: 0.1s;
+    height: 30vh;
 }
+@media screen and (max-width: 768px) {
+    #heartfeltMessage {
+        font-size: 40px;
+        height: 40vh;
+    }
+}
+@media screen and (max-width: 425px) {
+    #heartfeltMessage {
+        font-size: 25px;
+        margin-top: 10vh;
+    }
+}
+
+
 
 .butWhy {
     color: grey;
     font-family: 'Quicksand', serif;
     text-align: center;
-    position:fixed;
     font-size: 11px;
-    bottom: 1vh;
+    bottom: 0;
     width: 100%;
+    border-top: 1px solid #d8d8d8;
+}
+@media screen and (max-width: 425px) {
+    .butWhy {
+        font-size: 9px;
+    }
 }
 .butWhy h4 {
     font-family: 'Open Sans Condensed', serif;
+    font-size: 15px;
+}
+.butWhy *:hover {
+    transition-duration: 0.1s;
+    color: black;
 }
