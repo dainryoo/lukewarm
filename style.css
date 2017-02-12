@@ -56,15 +56,15 @@
 }
 @media screen and (max-width: 768px) {
     #heartfeltMessage {
-        font-size: 40px;
-        height: 40vh;
+        font-size: 47px;
+        height: 45vh;
     }
 }
 @media screen and (max-width: 425px) {
     #heartfeltMessage {
-        font-size: 35px;
+        font-size: 44px;
         margin-top: 10vh;
-        height: 50vh;
+        height: 60vh;
     }
 }
 
